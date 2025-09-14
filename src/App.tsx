@@ -1,4 +1,4 @@
-import reactLogo from './assets/react.svg'
+import Profile from './profile.tsx'
 import './index.css'
 
 function App() {
@@ -29,48 +29,8 @@ function App() {
     <div className="min-h-screen bg-gray-50">
       <div className="flex flex-col lg:flex-row gap-1 p-2 max-w-full mx-auto">
         {/* Profile Section */}
-        <div className="w-full lg:w-80 bg-white shadow-lg rounded-lg p-6 flex flex-col items-center lg:self-start">
-          <div className="mb-6">
-            <img
-              src={reactLogo}
-              alt="Profile"
-              className="w-32 h-32 rounded-full border-4 border-blue-200 shadow-md"
-            />
-          </div>
-          <div className="text-center space-y-2">
-            <h1 className="text-2xl font-bold text-gray-800">Reynaldo D. Aquit</h1>
-            <p className="text-blue-600 font-medium">Software Engineer</p>
-            <div className="mt-4 space-y-2 text-sm text-gray-600">
-              <p>📍 Location: Philippines</p>
-              <p>💼 Experience: 5+ years</p>
-              <p>🎯 Focus: Full-stack Development</p>
-            </div>
-          </div>
-
-          {/* Skills Section */}
-          <div className="mt-6 w-full">
-            <h3 className="text-lg font-semibold mb-3 text-gray-800">Skills</h3>
-            <div className="flex flex-wrap gap-2">
-              {['React', 'TypeScript', 'Node.js', 'Python', 'PostgreSQL', 'AWS'].map((skill) => (
-                <span
-                  key={skill}
-                  className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-xs font-medium"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
-
-          {/* Contact Section */}
-          <div className="mt-6 w-full">
-            <h3 className="text-lg font-semibold mb-3 text-gray-800">Contact</h3>
-            <div className="space-y-2 text-sm text-gray-600">
-              <p>📧 reynaldo@example.com</p>
-              <p>🔗 linkedin.com/in/reynaldo</p>
-              <p>🐙 github.com/reynaldo</p>
-            </div>
-          </div>
+        <div className="w-full lg:w-80 bg-white shadow-lg p-6">
+        <Profile />
         </div>
 
         {/* Dashboard Section */}
