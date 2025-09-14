@@ -102,7 +102,7 @@ function profile() {
             <div className="space-y-2 text-sm text-gray-600">
               <p>📧 reynaldo@gmail.com</p>
               <p>🔗 linkedin.com/in/reynaldo-aquit-70b715257/</p>
-              <p>🐙 github.com/rrenz</p>
+              <p>🐙 github.com/reynaldo-aquit</p>
             </div>
           </div>
         </div>
